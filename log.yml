@@ -1,0 +1,9 @@
+logrotate_applications:
+  - name: myapp
+    definitions:
+      - logs:
+          - /var/log/myapp.log
+        options:
+          - daily
+          - rotate 3
+          - compress
